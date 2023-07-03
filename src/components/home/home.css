@@ -1,0 +1,14 @@
+.home {
+  background-color: var(--first-gradient);
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+}
+.home__container {
+  /* background-color: var(--primary-color); */
+  width: 100%;
+}
+.home__subtitle,
+.home__jop {
+  font-weight: 700;
+}
