@@ -21,6 +21,30 @@ const Home = () => {
           <span className="text-cs">I Am</span> <b>Web Develober</b>
         </p>
 
+        <div className="home__img-wrapper">
+          <div className="home__banner">
+            <img src={profileImg} alt="" className="home__profile" />
+          </div>
+          <p className="home__data home__data-one">
+            <span className="text-lg">
+              12 <b>+</b>
+            </span>
+            <span className="text-sm text-cs">
+              Years of <span>Experience</span>
+            </span>
+          </p>
+          <p className="home__data home__data-two">
+            <span className="text-lg">330</span>
+            <span className="text-sm text-cs">
+              Completed <span>Projects</span>
+            </span>
+          </p>
+
+          <img src={ShapeOne} alt="" className="shape shape__1" />
+          <img src={ShapeTwo} alt="" className="shape shape__2" />
+          <img src={ShapeTwo} alt="" className="shape shape__3" />
+        </div>
+
         <p className="home__text">
           From France, Paris. I have rich expoerince in web design , also Iam
           good at wordpress. Iove to talk with you about unique
@@ -37,10 +61,10 @@ const Home = () => {
           </a>
         </div>
         <div className="home__btns">
-          <a href="" className="btn">
+          <a href="" className="btn text-cs">
             Download
           </a>
-          <a href="" className="btn">
+          <a href="" className="hero__link text-cs">
             My Skills
           </a>
         </div>
