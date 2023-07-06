@@ -27,7 +27,7 @@ const Portfolio = () => {
   return (
     <section className="portfolio section" id="work">
       <h2 className="section__title text-cs">Portfolio</h2>
-      <p className="section__subtitle">
+      <p className="section__subtitle text-cs">
         My <span>Cases</span>
       </p>
       <List list={navList} filterItems={filterItems} />

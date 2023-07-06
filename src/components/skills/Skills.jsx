@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <section className="skills section" id="skills">
       <h2 className="section__title text-cs">Professional skills</h2>
-      <p className="section__subtitle">
+      <p className="section__subtitle text-cs">
         My <span>talent</span>
       </p>
       <div className="skills__container container grid">

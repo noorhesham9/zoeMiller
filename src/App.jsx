@@ -1,4 +1,5 @@
 import "./App.css";
+import Resume from "./components/Resume/Resume";
 import Home from "./components/home/Home";
 import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
@@ -11,6 +12,7 @@ function App() {
       <Services />
       <Skills />
       <Portfolio />
+      <Resume />
     </main>
   );
 }
