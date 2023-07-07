@@ -1,5 +1,6 @@
 import "./App.css";
 import Resume from "./components/Resume/Resume";
+import Blog from "./components/blog/Blog";
 import Home from "./components/home/Home";
 import Portfolio from "./components/portfolio/Portfolio";
 import Pricing from "./components/pricing/Pricing";
@@ -17,6 +18,7 @@ function App() {
       <Resume />
       <Testimonials />
       <Pricing />
+      <Blog />
     </main>
   );
 }

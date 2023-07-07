@@ -29,16 +29,17 @@
 
 .swiper-horizontal > .swiper-pagination-bullets {
   width: auto !important;
-  display: inline-block;
+  display: inline-flex;
   position: relative;
+  height: 26px;
+  justify-content: center;
+  align-items: center;
 }
 .swiper-horizontal > .swiper-pagination-bullets::before {
   content: "";
   height: 2px;
   right: 0;
   position: absolute;
-  top: 50%;
-  transform: translateY(50%);
   width: 100%;
   background-color: var(--title-color);
 }
@@ -65,5 +66,4 @@
   background-color: var(--primary-color);
   width: 13px;
   height: 13px;
-  top: 3px;
 }

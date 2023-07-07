@@ -78,3 +78,21 @@
 .pricing__btn:hover .pricing__btn-icon {
   right: 35px;
 }
+
+.pricing__item-wrapper {
+  position: relative;
+}
+
+.pricing__label {
+  position: absolute;
+  top: -12px;
+  right: 40px;
+  z-index: 20;
+  background-color: var(--primary-color);
+  box-shadow: var(--shadow);
+  color: var(--title-color);
+  padding: 4px 16px;
+  border-radius: 26px;
+  font-size: var(--tiny-font-size);
+  font-weight: 700;
+}
