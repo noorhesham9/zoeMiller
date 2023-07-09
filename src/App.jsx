@@ -13,7 +13,7 @@ import Testimonials from "./components/testimonials/Testimonials";
 
 function App() {
   return (
-    <main>
+    <main className="main">
       <Header />
       <Home />
       <Services />

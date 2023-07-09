@@ -4,6 +4,7 @@ import Item from "./Item";
 import { projects } from "../../Data";
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
+import ShapeOne from "../../assets/shape-1.png";
 
 const allNavList = [
   "all",
@@ -35,6 +36,10 @@ const Portfolio = () => {
         <AnimatePresence initial={false}>
           <Item projectItems={projectItems} />
         </AnimatePresence>
+      </div>
+
+      <div className="section__deco deco__right">
+        <img src={ShapeOne} alt="" className="shape" />
       </div>
     </section>
   );

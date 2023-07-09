@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Jost:wght@400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --primary-color: hsl(165, 60%, 40%);
   --title-color: hsl(0, 0%, 100%);
@@ -26,8 +30,8 @@
 
   --body-font: "Jost", sans-serif;
   --second-font: "Caveat", cursive;
-  --biggest-font-size: 90px;
-  --h1-font-size: 44px;
+  --biggest-font-size: clamp(2.25rem, 1.125rem + 5.1429vw, 5.625rem);
+  --h1-font-size: clamp(1.75rem, 1.4167rem + 1.5238vw, 2.75rem);
   --h2-font-size: 30px;
   --h3-font-size: 28px;
   --h4-font-size: 24px;
@@ -121,9 +125,13 @@ img {
   max-width: 100%;
 }
 
+.main {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1300px;
-  padding-inline: 12px;
+  padding-inline: 12px !important;
   margin-inline: auto;
 }
 
@@ -185,6 +193,7 @@ img {
 
 .section {
   padding-bottom: 220px;
+  position: relative;
 }
 
 .section__title,
@@ -257,4 +266,55 @@ img {
 }
 .shape {
   position: absolute;
+}
+
+.section__deco {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  width: 2px;
+  height: 70%;
+  background-color: var(--border-color);
+  z-index: 1;
+}
+
+.deco__right {
+  right: 3%;
+}
+.deco__left {
+  left: 3%;
+}
+
+.section__deco::before,
+.section__deco::after {
+  content: "";
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--bg-color);
+  position: absolute;
+  border: 2px solid var(--border-color);
+  box-shadow: var(--shadow);
+}
+
+.section__deco::before {
+  top: 0;
+  transform: translate(-50%, -100%);
+}
+
+.section__deco::after {
+  bottom: 0;
+  transform: translate(-50%, 100%);
+}
+.section__deco .shape {
+  max-width: 226px;
+  height: -200px;
+  bottom: -200px;
+}
+.deco__left .shape {
+  left: -170px;
+}
+.deco__right .shape {
+  right: -170px;
 }

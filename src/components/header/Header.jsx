@@ -7,6 +7,8 @@ import { FaBehance } from "react-icons/fa";
 import { BsSun, BsMoon } from "react-icons/bs";
 import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
+import ShapeOne from "../../assets/shape-1.png";
+
 const getStorageTheme = () => {
   let theme = "light-theme";
   if (localStorage.getItem("theme")) {
@@ -95,6 +97,9 @@ const Header = () => {
                 <FaBehance />
               </a>
             </div>
+          </div>
+          <div className="section__deco deco__left header__deco">
+            <img src={ShapeOne} alt="" className="shape" />
           </div>
         </div>
 

@@ -3,6 +3,7 @@ import shapeTwo from "../../assets/shape-2.png";
 import { testimonials } from "../../Data";
 import testimonialIcon from "../../assets/testimonials-icon.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
+import ShapeOne from "../../assets/shape-1.png";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
@@ -56,6 +57,9 @@ const Testimonials = () => {
           );
         })}
       </Swiper>
+      <div className="section__deco deco__right">
+        <img src={ShapeOne} alt="" className="shape" />
+      </div>
     </section>
   );
 };

@@ -1,5 +1,7 @@
 import "./skills.css";
 import { skills } from "../../Data";
+import ShapeOne from "../../assets/shape-1.png";
+
 const Skills = () => {
   return (
     <section className="skills section" id="skills">
@@ -28,6 +30,10 @@ const Skills = () => {
             </div>
           );
         })}
+      </div>
+
+      <div className="section__deco deco__left">
+        <img src={ShapeOne} alt="" className="shape" />
       </div>
     </section>
   );

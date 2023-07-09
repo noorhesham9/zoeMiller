@@ -65,10 +65,14 @@ const Home = () => {
             <a href="" className="btn text-cs">
               Download
             </a>
-            <a href="" className="hero__link text-cs">
+            <a href="#skills" className="hero__link text-cs">
               My Skills
             </a>
           </div>
+        </div>
+
+        <div className="section__deco deco__left">
+          <img src={ShapeOne} alt="" className="shape" />
         </div>
       </div>
     </section>

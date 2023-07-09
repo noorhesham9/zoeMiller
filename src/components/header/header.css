@@ -40,6 +40,7 @@
   right: 0;
   width: 0;
   height: 100vh;
+  overflow: hidden;
   display: flex;
   background-color: var(--bg-color-alt);
   z-index: 10;
@@ -135,4 +136,13 @@
 
 .nav__toggle span:last-child {
   bottom: 8px;
+}
+
+.header__deco {
+  left: 75px;
+}
+.header__deco .shape {
+  top: -200px;
+  left: -168px;
+  z-index: -1;
 }

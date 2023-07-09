@@ -81,6 +81,8 @@
 .contact__submit {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: flex-end;
   column-gap: 30px;
+  row-gap: 15px;
 }

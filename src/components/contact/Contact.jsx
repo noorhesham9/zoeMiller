@@ -5,6 +5,8 @@ import {
   FaRegMap,
 } from "react-icons/fa";
 
+import ShapeOne from "../../assets/shape-1.png";
+
 import axios from "axios";
 import "./contact.css";
 import { useState } from "react";
@@ -144,6 +146,10 @@ const Contact = () => {
             </button>
           </div>
         </form>
+      </div>
+
+      <div className="section__deco deco__left">
+        <img src={ShapeOne} alt="" className="shape" />
       </div>
     </section>
   );

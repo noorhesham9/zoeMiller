@@ -5,6 +5,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import shapeTwo from "../../assets/shape-2.png";
+import ShapeOne from "../../assets/shape-1.png";
+
 import "./services.css";
 
 const Services = () => {
@@ -43,7 +45,7 @@ const Services = () => {
               <span className="services__subtitle text-cs">{name}</span>
               <h3 className="services__title">{title}</h3>
               <p className="services__description">{description}</p>
-              <a href="" className="link">
+              <a href="#pricing" className="link">
                 See Pricing <FaArrowRight className="link__icon" />
               </a>
               <img src={shapeTwo} alt="" className="shape c__shape" />
@@ -51,6 +53,10 @@ const Services = () => {
           );
         })}
       </Swiper>
+
+      <div className="section__deco deco__right">
+        <img src={ShapeOne} alt="" className="shape" />
+      </div>
     </section>
   );
 };
