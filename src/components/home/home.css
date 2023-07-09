@@ -34,6 +34,7 @@
 }
 
 .home__title {
+  color: #fff;
   font-size: var(--biggest-font-size);
   text-shadow: 2px 2px hsl(0, 0%, 0%), -2px 2px hsl(0, 0%, 0%),
     2px -2px hsl(0, 0%, 0%), -2px -2px hsl(0, 0%, 0%), 5px 5px rgb(0 0 0 / 20%);
@@ -139,12 +140,6 @@
 .home__data .text-lg b {
   position: relative;
   top: -4px;
-}
-
-.shape {
-  position: absolute;
-  filter: invert(1);
-  opacity: 0.6;
 }
 
 .shape__1 {
