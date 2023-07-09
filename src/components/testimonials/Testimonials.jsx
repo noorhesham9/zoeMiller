@@ -60,6 +60,10 @@ const Testimonials = () => {
       <div className="section__deco deco__right">
         <img src={ShapeOne} alt="" className="shape" />
       </div>
+
+      <div className="section__bg-wrapper">
+        <span className="bg__title">Reviews</span>
+      </div>
     </section>
   );
 };

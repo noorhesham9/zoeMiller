@@ -151,6 +151,10 @@ const Contact = () => {
       <div className="section__deco deco__left">
         <img src={ShapeOne} alt="" className="shape" />
       </div>
+
+      <div className="section__bg-wrapper">
+        <span className="bg__title">Contact Me</span>
+      </div>
     </section>
   );
 };

@@ -75,6 +75,10 @@ const Home = () => {
           <img src={ShapeOne} alt="" className="shape" />
         </div>
       </div>
+
+      <div className="section__bg-wrapper">
+        <span className="bg__title">Web Developer</span>
+      </div>
     </section>
   );
 };
