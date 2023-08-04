@@ -53,7 +53,6 @@ const Header = () => {
   useEffect(() => {
     document.documentElement.classList = theme;
     localStorage.setItem("theme", theme);
-    console.log(getStorageTheme());
   }, [theme]);
 
   return (
